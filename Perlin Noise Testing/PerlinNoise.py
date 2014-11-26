@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        Perlin Noise
-# Purpose:
+# Purpose:     Perlin Noise Tile Generation Segment
 #
 # Author:      rexrex600
 #
