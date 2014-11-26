@@ -4,7 +4,7 @@ Features Wish List
 •	Graphics -  See Graphics List
 •	Engine  - See Engine List
 Engine:
-•	World Generation
+•	World Generation THIS IS WHAT WE ARE WORKING ON
 •	Pathfinding
 •	Bulding
 •	Chunking and Chunk loading/unloading
