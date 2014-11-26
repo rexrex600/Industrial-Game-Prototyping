@@ -1,5 +1,5 @@
 CURRENT PLAN FOR WORLD GEN
 Heights:
 0-63  Ocean
-64-191 Plains/Forest/Everything else
+64-191 Plains/Forest/Everything else (Hills at upper range, flats/valleys at lower range)
 192-255 Mountains
