@@ -1,0 +1,5 @@
+I think I've found the problem of tessalation. If the size of the tile / frequency is less than 4, tiling occurs. 
+All we have to do is modify the frequency with size and we can prevent tiling. 
+This will need to be confirmed with more expermient but I think if we can modify the frequency based on image size, we can
+prevent tessalation and instead get the tiling effect - which is preferable. I'm not sure why this occurs but we can 
+elimanate the bug, so it's a win-win.
