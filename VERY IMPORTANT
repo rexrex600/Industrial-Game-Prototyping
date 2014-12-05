@@ -1,5 +1,21 @@
-I think I've found the problem of tessalation. If the size of the tile / frequency is less than 4, tiling occurs. 
-All we have to do is modify the frequency with size and we can prevent tiling. 
+I think I've found the problem of tessalation. If the size of the tile / frequency is less than 4, repetion occurs. 
+All we have to do is modify the frequency with size and we can prevent repetion. 
 This will need to be confirmed with more expermient but I think if we can modify the frequency based on image size, we can
 prevent tessalation and instead get the tiling effect - which is preferable. I'm not sure why this occurs but we can 
 elimanate the bug, so it's a win-win.
+UPDATE - 5/12/14
+The effect is true - for a 256x256 map, if the frequency is above 64, repetion occurs. 
+If the frequency is below this, the maps are tilable (confirmed) but to not repeat on the map itself.
+
+Effect confirmed by experiment:
+256x256: Tested with frequencies 62,64,68. repetion only occured on 68
+512x512: Tested with frequencies 126,128,130. repetion only occured on 130
+1024x1024: Tested with frequencies 254,256,258. repetion only occured on 258
+
+Findings:
+If map_size/frequency <= 4:
+  repetion does not occur, tiling does
+Else:
+  repetion occurs
+I think we can use this to modify the frequency is your OOP version based on map size.#
+Also Joe, upload the OOP version.
